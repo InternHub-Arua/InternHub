@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Auth0 App</title>
+  <!-- Include the Auth0 JavaScript library -->
+  <script src="https://cdn.auth0.com/js/auth0/9.12.3/auth0.min.js"></script>
+</head>
+<body>
+  <!-- Create a button for the user to log in -->
+
+
+  <div class="auth-section">
+    <h2>Login or Sign up</h2>
+    <div id="login-container"></div>
+    <button id="login-button">Log in</button>
+    <button id="signup-button">Sign up</button>
+  </div>
+  
+
+  <!-- Add a script that initializes Auth0 and handles authentication -->
+  <script>
+    var auth0 = new auth0.WebAuth({
+      domain: 'YOUR_AUTH0_DOMAIN',
+      clientID: 'YOUR_AUTH0_CLIENT_ID',
+      redirectUri: 'http://localhost:3000/callback',
+      responseType: 'token id_token',
+      scope: 'openid'
+    });
+
+    // Add a click event listener to the login button
+    document.getElementById('login-btn').addEventListener('click', function() {
+      auth0.authorize();
+    });
+
+    // Handle the authentication callback
+    auth0.parseHash(function(err, authResult) {
+      if (authResult && authResult.accessToken && authResult.idToken) {
+        // Save the user's tokens in local storage
+        localStorage.setItem('accessToken', authResult.accessToken);
+        localStorage.setItem('idToken', authResult.idToken);
+        
+        // Redirect the user to the home page
+        window.location.href = '/home';
+      } else if (err) {
+        console.error(err);
+      }
+    });
+  </script>
+
+</body>
+</html>

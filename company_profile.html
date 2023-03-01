@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Company Profile | InternHub</title>
+    <style>
+        /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.search-container {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    margin: 0;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-links li {
+    margin-left: 1rem;
+}
+
+.menu-links li:first-child {
+    margin-left: 0;
+}
+
+.menu-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media query for menu icon */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .menu-links li {
+        margin: 0;
+    }
+
+    .menu-links a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+/* Main section styles */
+#main-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="search-container">
+        <h1 class="logo">InternHub</h1>
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <form action="search_results.html" method="get">
+            <label for="search">Search our site:</label>
+            <input type="text" id="search" name="search" placeholder="Search our site">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <section id="main-section">
+        <h2>About Us</h2>
+        <p>Welcome to InternHub, a leading provider of innovative solutions for businesses of all sizes. Founded in 2023, we have a long history of helping our clients achieve success through our cutting-edge technologies and world-class customer service.</p>
+        <h3>Our Team</h3>
+        <p>Our team of experts includes some of the most talented and experienced professionals in the industry. With backgrounds in engineering, software development, and business management, our team is uniquely qualified to help you achieve your goals.</p>
+        <h3>Our Mission</h3>
+        <p>At InternHub, our mission is to connect talented students with great internships and employers. We are committed to providing our clients with the tools they need to find the best interns and succeed in today's competitive job market.</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 InternHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
