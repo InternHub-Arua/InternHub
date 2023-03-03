@@ -20,4 +20,5 @@ Support
 If you need help using InternHub, please contact our support team directly. We're always here to help you make the most of your experience on our platform.
 
 License
-InternHub is a proprietary platform owned and operated by Ayiko Andrew and Aita Boyid Hamid. All rights reserved.
+InternHub is a proprietary platform owned and operated by Ayiko Andrew and Aita Boyid Hamid.
+All rights reserved.
