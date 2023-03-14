@@ -1,0 +1,81 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to top,black, rgba(38, 87, 38, 0.87));
+    color: gray;
+}
+.content{
+    text-align: right;
+}
+.logo{
+    text-align: right;
+    color: rgb(194, 139, 0);
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 70%;
+  
+}
+.logoo{
+    background:linear-gradient(black, rgb(194, 139, 0));
+    border-radius: 20px;
+}
+.logo h1 span{
+    color: rgb(194, 139, 0);
+}
+.menu-links{
+    background:linear-gradient(black, rgb(194, 139, 0));
+    height: 100px;
+    color: rgb(194, 139, 0);
+    display: flex;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    height: 50px;
+}
+li{
+    float: left;
+    display: inline-block;
+  padding: 10px 20px;
+}
+li a:hover{
+    background-color: rgb(194, 139, 0);
+    border-radius: 20px;
+    
+}
+li a{
+    display:inline-block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: double;
+}
+.glowing-text{
+    background:linear-gradient(black, rgb(194, 139, 0));
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: gray;
+    font-size: 25px;
+}
+button{
+    background-color:  rgb(194, 139, 0);
+    border-radius: 10px;
+    align-self: center;
+
+}
+input{
+background:linear-gradient(black, rgb(194, 139, 0));
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 10px;
+margin-bottom:20px;
+border-color: black;
+color: gray;
+}
+input:hover{
+    background-color:black;
+}
